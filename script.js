@@ -1,9 +1,11 @@
 function firstWord(s) {
-  // your code here
-  if(s.length === 0) {
-	  return '';
-  }	
-	let spaceIndex = s.indexOf(' ');
+    // If the string is empty, return an empty string
+    if (s.length === 0) {
+        return '';
+    }
+
+    // Find the first space in the string
+    let spaceIndex = s.indexOf(' ');
 
     // If no space is found, return the entire string
     if (spaceIndex === -1) {
@@ -15,6 +17,5 @@ function firstWord(s) {
 }
 
 // Do not change the code below
-
 const s = prompt("Enter String:");
-alert(firstWord(s));
+console.log(firstWord(s));
